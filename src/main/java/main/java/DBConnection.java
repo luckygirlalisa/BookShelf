@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class DBConnection {
-    public static void main(String book_name) {
+    public void manageDB(String book_name) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/book_shelf", "root", "");
