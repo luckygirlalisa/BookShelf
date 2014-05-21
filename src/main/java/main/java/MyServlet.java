@@ -13,5 +13,6 @@ public class MyServlet extends HttpServlet {
                       HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Book-shelf-home.jsp");
         requestDispatcher.forward(request, response);
+        System.out.println(request.getParameter("book_name"));
     }
 }
