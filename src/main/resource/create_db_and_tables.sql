@@ -5,6 +5,7 @@ USE book_shelf;
 
 CREATE TABLE book_list
 (
-  ISBN int,
-  name varchar(100)
+  ISBN int AUTO_INCREMENT,
+  name varchar(100),
+  primary key(ISBN)
 );

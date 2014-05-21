@@ -14,10 +14,6 @@ public class MyServlet extends HttpServlet {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Book-shelf-home.jsp");
         requestDispatcher.forward(request, response);
 
-        String book_name = request.getParameter("book_name");
-        System.out.println(book_name);
-        String[] bookNameList = new String[10];
-        bookNameList[0] = book_name;
-        new DBConnection().main(bookNameList);
+        new DBConnection().main(request.getParameter("book_name"));
     }
 }

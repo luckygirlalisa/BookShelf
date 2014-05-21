@@ -64,43 +64,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Book-shelf-home.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Book-shelf-home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="223" selection-end="223" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/java/MyServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="14" column="37" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnection.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBConnection.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/java/DBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="7" column="44" selection-start="179" selection-end="179" vertical-scroll-proportion="0.24822696" vertical-offset="0" max-vertical-offset="423">
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1400658546000" expanded="true" signature="463:497" placeholder="insert into ..." />
-                <marker date="1400658546000" expanded="true" signature="463:503" placeholder="insert into ..." />
-                <marker date="1400658546000" expanded="true" signature="463:498" placeholder="insert into ..." />
-                <marker date="1400658546000" expanded="true" signature="463:516" placeholder="insert into ..." />
+                <marker date="1400661532000" expanded="true" signature="466:501" placeholder="insert into ..." />
+                <marker date="1400661532000" expanded="true" signature="466:506" placeholder="insert into ..." />
+                <marker date="1400661532000" expanded="true" signature="466:501" placeholder="insert into ..." />
+                <marker date="1400661532000" expanded="true" signature="466:521" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_db_and_tables.sql" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="create_db_and_tables.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="0.36193028" vertical-offset="0" max-vertical-offset="373">
+            <state line="10" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -166,6 +157,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -397,10 +391,10 @@
         <option value="$PROJECT_DIR$/src/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/MyServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Book-shelf-home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/main/java/MyServlet.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql" />
         <option value="$PROJECT_DIR$/src/main/java/main/java/JDBCConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/main/java/MyServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/java/DBConnection.java" />
       </list>
     </option>
@@ -410,7 +404,7 @@
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -885,12 +879,12 @@
       <workItem from="1400129349790" duration="5380000" />
       <workItem from="1400153440226" duration="20882000" />
       <workItem from="1400546949531" duration="1837000" />
-      <workItem from="1400556654794" duration="16353000" />
+      <workItem from="1400556654794" duration="19094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44452000" />
+    <option name="totallyTimeSpent" value="47193000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -917,7 +911,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -929,7 +923,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1239,30 +1233,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="37" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.33170733" vertical-offset="479" max-vertical-offset="4635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="264" selection-end="264" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/java/MyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="14" column="37" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/java/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="7" column="44" selection-start="179" selection-end="179" vertical-scroll-proportion="0.24822696" vertical-offset="0" max-vertical-offset="423">
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1400658546000" expanded="true" signature="463:497" placeholder="insert into ..." />
-            <marker date="1400658546000" expanded="true" signature="463:503" placeholder="insert into ..." />
-            <marker date="1400658546000" expanded="true" signature="463:498" placeholder="insert into ..." />
-            <marker date="1400658546000" expanded="true" signature="463:516" placeholder="insert into ..." />
+            <marker date="1400661532000" expanded="true" signature="466:501" placeholder="insert into ..." />
+            <marker date="1400661532000" expanded="true" signature="466:506" placeholder="insert into ..." />
+            <marker date="1400661532000" expanded="true" signature="466:501" placeholder="insert into ..." />
+            <marker date="1400661532000" expanded="true" signature="466:521" placeholder="insert into ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="0.36193028" vertical-offset="0" max-vertical-offset="373">
-          <folding />
         </state>
       </provider>
     </entry>
