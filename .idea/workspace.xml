@@ -64,10 +64,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Book-shelf-home.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Book-shelf-home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="37" selection-start="137" selection-end="146" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BookShelfDBConnection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDBConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="10" column="75" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1400674491000" expanded="true" signature="472:507" placeholder="insert into ..." />
@@ -79,37 +88,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookShelfDataSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="11" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="600">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1400726794000" expanded="true" signature="628:683" placeholder="insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/java/AddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="23" column="54" selection-start="806" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookShelfServletContext.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfServletContext.java">
+      <file leaf-file-name="BookShelfDataManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDataManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="57" selection-start="589" selection-end="589" vertical-scroll-proportion="0.7092199" vertical-offset="0" max-vertical-offset="2400">
+            <state line="10" column="49" selection-start="302" selection-end="302" vertical-scroll-proportion="0.22900763" vertical-offset="0" max-vertical-offset="655">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
+                <marker date="1400738771000" expanded="true" signature="428:483" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -118,8 +112,11 @@
       <file leaf-file-name="ServletContext.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="17" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="9885">
-              <folding />
+            <state line="65" column="17" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="9885">
+              <folding>
+                <element signature="e#0#22412#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,6 +134,15 @@
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.6/380ef5226de2c85ff3b38cbfefeea881c5fce09d/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/jdbc2/optional/MysqlDataSource.class">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/GenericServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="217" column="38" selection-start="6224" selection-end="6233" vertical-scroll-proportion="0.0" vertical-offset="2664" max-vertical-offset="5070">
               <folding />
             </state>
           </provider>
@@ -394,7 +400,6 @@
         <option value="$PROJECT_DIR$/src/main/java/servlet/MyServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/Book-shelf-home.jsp" />
         <option value="$PROJECT_DIR$/src/com/zhanfei/MyServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/java/MyServlet.java" />
         <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/web.xml" />
@@ -408,9 +413,11 @@
         <option value="$PROJECT_DIR$/src/main/java/main/java/MyServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/java/ServletContextManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/java/BookShelfServletContextManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/java/AddServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/java/BookShelfDataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/java/BookShelfServletContext.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/main/java/BookShelfDataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/java/BookShelfDataManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/java/AddServlet.java" />
       </list>
     </option>
   </component>
@@ -453,6 +460,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="BookShelf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -897,12 +908,12 @@
       <workItem from="1400129349790" duration="5380000" />
       <workItem from="1400153440226" duration="20882000" />
       <workItem from="1400546949531" duration="1837000" />
-      <workItem from="1400556654794" duration="32435000" />
+      <workItem from="1400556654794" duration="42312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60534000" />
+    <option name="totallyTimeSpent" value="70411000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -933,7 +944,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -943,7 +954,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24391988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1210,20 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="22" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="15030">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/sql/DriverManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="38" selection-start="759" selection-end="759" vertical-scroll-proportion="0.33170733" vertical-offset="149" max-vertical-offset="990">
@@ -1234,13 +1231,6 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="74" selection-start="222" selection-end="222" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Book-shelf-home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="223" selection-end="223" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
@@ -1273,6 +1263,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="17" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="9885">
+          <folding>
+            <element signature="e#0#22412#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="50" selection-start="3164" selection-end="3178" vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="15030">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/GenericServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="38" selection-start="6224" selection-end="6233" vertical-scroll-proportion="0.0" vertical-offset="2664" max-vertical-offset="5070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="504" selection-end="507" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/create_db_and_tables.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="2" selection-start="264" selection-end="264" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="240">
@@ -1280,26 +1301,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Book-shelf-home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="17" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="9885">
+        <state line="7" column="37" selection-start="137" selection-end="146" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDataSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/java/AddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="600">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1400726794000" expanded="true" signature="628:683" placeholder="insert into ..." />
-          </folding>
+        <state line="23" column="54" selection-start="806" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="10" column="75" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1400674491000" expanded="true" signature="472:507" placeholder="insert into ..." />
@@ -1310,22 +1328,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/java/AddServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfDataManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/java/BookShelfServletContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="57" selection-start="589" selection-end="589" vertical-scroll-proportion="0.7092199" vertical-offset="0" max-vertical-offset="2400">
+        <state line="10" column="49" selection-start="302" selection-end="302" vertical-scroll-proportion="0.22900763" vertical-offset="0" max-vertical-offset="655">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
+            <marker date="1400738771000" expanded="true" signature="428:483" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
