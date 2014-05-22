@@ -5,7 +5,7 @@
 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <servlet>
         <servlet-name>MyServlet</servlet-name>
-        <servlet-class>main.java.MyServlet</servlet-class>
+        <servlet-class>main.java.AddServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
