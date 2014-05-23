@@ -23,10 +23,6 @@ public class AddServlet extends HttpServlet {
         MysqlDataSource mySqlDataSource = new MysqlDataSource();
         mySqlDataSource.setURL("jdbc:mysql://localhost:3306/book_shelf");
         servletContext.setAttribute("mySqlDataSource", mySqlDataSource);
-
-        String servletName = config.getServletName();
-        System.out.println("contextPath" + servletContext.getContextPath());
-        System.out.println(servletName);
     }
 
     @Override
@@ -35,7 +31,11 @@ public class AddServlet extends HttpServlet {
 
         RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/WEB-INF/pages/Book-shelf-home.jsp");
         requestDispatcher.forward(request, response);
+    }
 
-        bookShelfDataManager.manageDB((DataSource) servletContext.getAttribute("mySqlDataSource"), request.getParameter("book_name"));
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+        bookShelfDataManager.insertBookIntoBookList((DataSource) servletContext.getAttribute("mySqlDataSource"), request.getParameter("book_name"));
     }
 }
