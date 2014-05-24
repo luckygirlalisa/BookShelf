@@ -15,13 +15,12 @@
             <th style="padding-left: 100px">Book name</th>
         </tr>
 
-        <c:forEach items="${cookie}" var="bookName">
+        <c:forEach items="${bookNames}" var="bookName">
             <tr>
                 <td></td>
-                <td style="padding-left: 100px">${bookName.value.value}</td>
+                <td style="padding-left: 100px">${bookName}</td>
             </tr>
         </c:forEach>
-
     </table>
 </form>
 </body>

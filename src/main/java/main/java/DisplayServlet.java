@@ -30,10 +30,7 @@ public class DisplayServlet extends HttpServlet {
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
 
-        for (int i =0; i < bookNameList.size(); i++) {
-            Cookie bookNameCookie = new Cookie("bookName" + i, bookNameList.get(i));
-            response.addCookie(bookNameCookie);
-        }
+            request.setAttribute("bookNames", bookNameList);
 
         requestDispatcher.forward(request, response);
     }
