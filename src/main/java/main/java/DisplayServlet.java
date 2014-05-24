@@ -1,12 +1,14 @@
 package main.java;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import main.java.dataManager.BookShelfDataManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.List;
@@ -19,9 +21,7 @@ public class DisplayServlet extends HttpServlet {
     public void init(ServletConfig config) {
         servletContext = config.getServletContext();
 
-        MysqlDataSource mySqlDataSource = new MysqlDataSource();
-        mySqlDataSource.setURL("jdbc:mysql://localhost:3306/book_shelf");
-        servletContext.setAttribute("mySqlDataSource", mySqlDataSource);
+        System.out.println(servletContext.getAttribute("mySqlDataSource"));
     }
 
     @Override
@@ -30,7 +30,7 @@ public class DisplayServlet extends HttpServlet {
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
 
-            request.setAttribute("bookNames", bookNameList);
+        request.setAttribute("bookNames", bookNameList);
 
         requestDispatcher.forward(request, response);
     }

@@ -1,6 +1,6 @@
 package main.java;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import main.java.dataManager.BookShelfDataManager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -19,10 +19,6 @@ public class AddServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) {
         servletContext = config.getServletContext();
-
-        MysqlDataSource mySqlDataSource = new MysqlDataSource();
-        mySqlDataSource.setURL("jdbc:mysql://localhost:3306/book_shelf");
-        servletContext.setAttribute("mySqlDataSource", mySqlDataSource);
     }
 
     @Override

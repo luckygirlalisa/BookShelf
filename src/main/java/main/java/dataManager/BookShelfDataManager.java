@@ -1,4 +1,4 @@
-package main.java;
+package main.java.dataManager;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
