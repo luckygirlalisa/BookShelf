@@ -1,6 +1,7 @@
 package main.java.customServlet;
 
 import main.java.dataManager.BookShelfDataManager;
+import main.java.dataManager.BookshelfDataSource;
 import main.java.model.Book;
 
 import javax.servlet.RequestDispatcher;
@@ -25,7 +26,8 @@ public class DisplayServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Book> bookList = bookShelfDataManager.getBooksFromBookList((DataSource) servletContext.getAttribute("mySqlDataSource"));
+        DataSource bookshelfDataSource = ((BookshelfDataSource) servletContext.getAttribute("mySqlDataSource")).getMysqlDataSource();
+        List<Book> bookList = bookShelfDataManager.getBooksFromBookList(bookshelfDataSource);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
 

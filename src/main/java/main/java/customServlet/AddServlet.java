@@ -1,6 +1,7 @@
 package main.java.customServlet;
 
 import main.java.dataManager.BookShelfDataManager;
+import main.java.dataManager.BookshelfDataSource;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -32,6 +33,7 @@ public class AddServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
-        bookShelfDataManager.insertBookIntoBookList((DataSource) servletContext.getAttribute("mySqlDataSource"), request.getParameter("book_name"));
+        DataSource bookshelfDataSource = ((BookshelfDataSource) servletContext.getAttribute("mySqlDataSource")).getMysqlDataSource();
+        bookShelfDataManager.insertBookIntoBookList(bookshelfDataSource, request.getParameter("book_name"));
     }
 }

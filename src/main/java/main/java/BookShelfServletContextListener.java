@@ -1,6 +1,6 @@
 package main.java;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -11,9 +11,9 @@ public class BookShelfServletContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext servletContext = sce.getServletContext();
 
-        MysqlDataSource mySqlDataSource = new MysqlDataSource();
-        mySqlDataSource.setURL("jdbc:mysql://localhost:3306/book_shelf");
-        servletContext.setAttribute("mySqlDataSource", mySqlDataSource);
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
+        Object bookshelfDataSource = applicationContext.getBean("bookshelf-data-source");
+        servletContext.setAttribute("mySqlDataSource", bookshelfDataSource);
     }
 
     @Override
