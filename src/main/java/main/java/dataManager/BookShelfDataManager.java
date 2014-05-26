@@ -1,5 +1,7 @@
 package main.java.dataManager;
 
+import main.java.model.Book;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -20,17 +22,19 @@ public class BookShelfDataManager {
         }
     }
 
-    public List<String> getBooksFromBookList(DataSource dataSource) {
+    public List<Book> getBooksFromBookList(DataSource dataSource) {
         try {
             Connection connection = dataSource.getConnection("root", "");
             Statement statement = connection.createStatement();
 
-            ResultSet resultSet = statement.executeQuery("select name from book_list");
-            ArrayList<String> bookList = new ArrayList<String>();
+            ResultSet resultSet = statement.executeQuery("select * from book_list");
+            ArrayList<Book> bookList = new ArrayList<Book>();
 
             while (resultSet.next()) {
-                String name = resultSet.getString("name");
-                bookList.add(name);
+                Book book = new Book();
+                book.setISBN(resultSet.getInt("ISBN"));
+                book.setName(resultSet.getString("name"));
+                bookList.add(book);
             }
             return bookList;
         } catch (SQLException e) {

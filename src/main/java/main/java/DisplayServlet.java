@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.dataManager.BookShelfDataManager;
+import main.java.model.Book;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -26,11 +27,11 @@ public class DisplayServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<String> bookNameList = bookShelfDataManager.getBooksFromBookList((DataSource) servletContext.getAttribute("mySqlDataSource"));
+        List<Book> bookList = bookShelfDataManager.getBooksFromBookList((DataSource) servletContext.getAttribute("mySqlDataSource"));
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
 
-        request.setAttribute("bookNames", bookNameList);
+        request.setAttribute("bookList", bookList);
 
         requestDispatcher.forward(request, response);
     }

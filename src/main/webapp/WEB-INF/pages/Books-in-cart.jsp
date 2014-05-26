@@ -15,10 +15,10 @@
             <th style="padding-left: 100px">Book name</th>
         </tr>
 
-        <c:forEach items="${bookNames}" var="bookName">
+        <c:forEach items="${bookList}" var="book">
             <tr>
-                <td></td>
-                <td style="padding-left: 100px">${bookName}</td>
+                <td>${book.ISBN}</td>
+                <td style="padding-left: 100px">${book.name}</td>
             </tr>
         </c:forEach>
     </table>
