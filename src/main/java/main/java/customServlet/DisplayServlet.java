@@ -1,4 +1,4 @@
-package main.java;
+package main.java.customServlet;
 
 import main.java.dataManager.BookShelfDataManager;
 import main.java.model.Book;
@@ -21,8 +21,6 @@ public class DisplayServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) {
         servletContext = config.getServletContext();
-
-        System.out.println(servletContext.getAttribute("mySqlDataSource"));
     }
 
     @Override

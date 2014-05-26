@@ -8,7 +8,7 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     </listener>
     <servlet>
         <servlet-name>AddServlet</servlet-name>
-        <servlet-class>main.java.AddServlet</servlet-class>
+        <servlet-class>main.java.customServlet.AddServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -18,7 +18,7 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
     <servlet>
         <servlet-name>DisplayServlet</servlet-name>
-        <servlet-class>main.java.DisplayServlet</servlet-class>
+        <servlet-class>main.java.customServlet.DisplayServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DisplayServlet</servlet-name>
