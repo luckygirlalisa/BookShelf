@@ -1,12 +1,13 @@
 package main.java.customServlet;
 
 import main.java.dataManager.BookShelfDataManager;
-import main.java.dataManager.BookshelfDataSource;
+import main.java.dataManager.BookShelfDataSource;
 import main.java.model.Book;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,18 +17,20 @@ import java.io.IOException;
 import java.util.List;
 
 public class DisplayServlet extends HttpServlet {
-    private ServletContext servletContext;
-    BookShelfDataManager bookShelfDataManager = new BookShelfDataManager();
+    BookShelfDataManager bookShelfDataManager;
+    ApplicationContext applicationContext;
+    DataSource bookShelfDataSource;
 
     @Override
-    public void init(ServletConfig config) {
-        servletContext = config.getServletContext();
+    public void init() {
+        applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
+        bookShelfDataManager = (BookShelfDataManager)applicationContext.getBean("bookshelf-data-manager");
+        bookShelfDataSource = ((BookShelfDataSource)applicationContext.getBean("bookshelf-data-source")).getMysqlDataSource();
     }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        DataSource bookshelfDataSource = ((BookshelfDataSource) servletContext.getAttribute("mySqlDataSource")).getMysqlDataSource();
-        List<Book> bookList = bookShelfDataManager.getBooksFromBookList(bookshelfDataSource);
+        List<Book> bookList = bookShelfDataManager.getBooksFromBookList(bookShelfDataSource);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
 

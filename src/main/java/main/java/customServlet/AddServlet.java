@@ -1,7 +1,8 @@
 package main.java.customServlet;
 
 import main.java.dataManager.BookShelfDataManager;
-import main.java.dataManager.BookshelfDataSource;
+import main.java.dataManager.BookShelfDataSource;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -14,26 +15,28 @@ import javax.sql.DataSource;
 import java.io.IOException;
 
 public class AddServlet extends HttpServlet {
-    private ServletContext servletContext;
-    BookShelfDataManager bookShelfDataManager = new BookShelfDataManager();
+    BookShelfDataManager bookShelfDataManager;
+    ClassPathXmlApplicationContext applicationContext;
+    DataSource bookShelfDataSource;
 
     @Override
-    public void init(ServletConfig config) {
-        servletContext = config.getServletContext();
+    public void init() {
+        applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
+        bookShelfDataManager = (BookShelfDataManager)applicationContext.getBean("bookshelf-data-manager");
+        bookShelfDataSource = ((BookShelfDataSource)applicationContext.getBean("bookshelf-data-source")).getMysqlDataSource();
     }
 
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/WEB-INF/pages/Book-shelf-home.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Book-shelf-home.jsp");
         requestDispatcher.forward(request, response);
     }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
-        DataSource bookshelfDataSource = ((BookshelfDataSource) servletContext.getAttribute("mySqlDataSource")).getMysqlDataSource();
-        bookShelfDataManager.insertBookIntoBookList(bookshelfDataSource, request.getParameter("book_name"));
+        bookShelfDataManager.insertBookIntoBookList(bookShelfDataSource, request.getParameter("book_name"));
     }
 }

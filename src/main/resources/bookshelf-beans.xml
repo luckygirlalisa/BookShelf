@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="bookshelf-data-source" class="main.java.dataManager.BookshelfDataSource"></bean>
+    <bean id="bookshelf-data-source" class="main.java.dataManager.BookShelfDataSource"></bean>
+    <bean id="bookshelf-data-manager" class="main.java.dataManager.BookShelfDataManager"></bean>
 
 </beans>
