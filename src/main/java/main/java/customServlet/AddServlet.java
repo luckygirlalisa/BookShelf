@@ -1,7 +1,6 @@
 package main.java.customServlet;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
-import main.java.dataManager.BookShelfDataManager;
+import main.java.service.BookShelfService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
@@ -9,19 +8,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.sql.DataSource;
 import java.io.IOException;
 
 public class AddServlet extends HttpServlet {
-    BookShelfDataManager bookShelfDataManager;
     ClassPathXmlApplicationContext applicationContext;
-    DataSource bookShelfDataSource;
+    BookShelfService bookShelfService;
 
     @Override
     public void init() {
         applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
-        bookShelfDataManager = (BookShelfDataManager)applicationContext.getBean("bookshelf-data-manager");
-        bookShelfDataSource = (MysqlDataSource)applicationContext.getBean("mysql-data-source");
+        bookShelfService = (BookShelfService) applicationContext.getBean("bookshelf-service");
     }
 
     @Override
@@ -35,6 +31,6 @@ public class AddServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
-        bookShelfDataManager.insertBookIntoBookList(bookShelfDataSource, request.getParameter("book_name"));
+        bookShelfService.addBookToDB(request.getParameter("book_name"));
     }
 }
