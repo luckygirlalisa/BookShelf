@@ -6,5 +6,10 @@
 
     <bean id="bookshelf-data-source" class="main.java.dataManager.BookShelfDataSource"></bean>
     <bean id="bookshelf-data-manager" class="main.java.dataManager.BookShelfDataManager"></bean>
+    <bean id="mysql-data-source" class="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
+        <property name="url" value="jdbc:mysql://localhost:3306/book_shelf"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value=""></property>
+    </bean>
 
 </beans>

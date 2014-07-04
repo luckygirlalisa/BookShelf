@@ -1,13 +1,12 @@
 package main.java.customServlet;
 
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import main.java.dataManager.BookShelfDataManager;
-import main.java.dataManager.BookShelfDataSource;
 import main.java.model.Book;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +24,7 @@ public class DisplayServlet extends HttpServlet {
     public void init() {
         applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
         bookShelfDataManager = (BookShelfDataManager)applicationContext.getBean("bookshelf-data-manager");
-        bookShelfDataSource = ((BookShelfDataSource)applicationContext.getBean("bookshelf-data-source")).getMysqlDataSource();
+        bookShelfDataSource = (MysqlDataSource)applicationContext.getBean("mysql-data-source");
     }
 
     @Override
