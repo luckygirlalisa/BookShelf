@@ -1,7 +1,7 @@
-package main.java.service;
+package service;
 
-import main.java.dao.BookShelfDao;
-import main.java.model.Book;
+import dao.BookShelfDao;
+import model.Book;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.dao;
+package dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 

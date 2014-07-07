@@ -1,4 +1,4 @@
-package main.java;
+package listener;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,9 +1,8 @@
-package main.java.customServlet;
+package customServlet;
 
-import main.java.model.Book;
-import main.java.dao.BookShelfDao;
-import main.java.service.BookService;
+import model.Book;
 import org.springframework.context.ApplicationContext;
+import service.BookService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
