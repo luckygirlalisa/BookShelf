@@ -1,9 +1,9 @@
 package main.java.customServlet;
 
 import main.java.model.Book;
-import main.java.service.BookShelfService;
+import main.java.dao.BookShelfDao;
+import main.java.service.BookService;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,18 +15,17 @@ import java.util.List;
 
 public class DisplayServlet extends HttpServlet {
     ApplicationContext applicationContext;
-    BookShelfService bookShelfService;
+    BookService bookService;
 
     @Override
     public void init() {
-        applicationContext = new ClassPathXmlApplicationContext("classpath*:bookshelf-beans.xml");
-        bookShelfService = (BookShelfService)applicationContext.getBean("bookshelf-service");
+        applicationContext = (ApplicationContext)this.getServletContext().getAttribute("ioc");
+        bookService = (BookService)applicationContext.getBean("book-service");
     }
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Book> bookList = bookShelfService.fetchAllBooksFromDB();
-
+        List<Book> bookList = bookService.getAllBooks();
         request.setAttribute("bookList", bookList);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/pages/Books-in-cart.jsp");
