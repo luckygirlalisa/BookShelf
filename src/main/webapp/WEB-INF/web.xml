@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/j2ee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
-http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-    <listener>
-        <listener-class>listener.BookShelfServletContextListener</listener-class>
-    </listener>
-    <servlet>
-        <servlet-name>AddServlet</servlet-name>
-        <servlet-class>customServlet.AddServlet</servlet-class>
-    </servlet>
+http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+    <!--<listener>-->
+        <!--<listener-class>listener.BookShelfServletContextListener</listener-class>-->
+    <!--</listener>-->
 
-    <servlet-mapping>
-        <servlet-name>AddServlet</servlet-name>
-        <url-pattern>/add</url-pattern>
-    </servlet-mapping>
+    <!--<servlet>-->
+        <!--<servlet-name>AddServlet</servlet-name>-->
+        <!--<servlet-class>customServlet.AddServlet</servlet-class>-->
+    <!--</servlet>-->
 
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>AddServlet</servlet-name>-->
+        <!--<url-pattern>/add</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>DisplayServlet</servlet-name>-->
+        <!--<servlet-class>customServlet.DisplayServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>DisplayServlet</servlet-name>-->
+        <!--<url-pattern>/display</url-pattern>-->
+    <!--</servlet-mapping>-->
+    
     <servlet>
-        <servlet-name>DisplayServlet</servlet-name>
-        <servlet-class>customServlet.DisplayServlet</servlet-class>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DisplayServlet</servlet-name>
-        <url-pattern>/display</url-pattern>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 </web-app>

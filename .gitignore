@@ -1,5 +1,6 @@
 build/
 out/
+.gitignore.swp
+.idea
+.gradle
 .DS_Store
-.idea/
-.gradle/
